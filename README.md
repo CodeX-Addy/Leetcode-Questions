@@ -1,1 +1,1 @@
-This repo includes various leetcodes problems on Data Structures & Alogorithms
+This repo includes various Leetcode and Codestudio(Coding Ninjas) problems on Data Structures & Algorithms in CPP
