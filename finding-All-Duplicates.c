@@ -13,7 +13,7 @@ int* findDuplicates(int* nums, int numsSize, int* returnSize){
         nums[index] = - nums[index];
     }
     *returnSize = duplicate;
-    return ans;
+    
 
 
 // Description:
