@@ -8,3 +8,21 @@ public:
         }
     }
 };
+
+// Using recursion
+#include <bits/stdc++.h> 
+
+void reverseString(string& str, int i, int j){
+    if(i>j)
+     return;
+    swap(str[i],str[j]);
+    i++;
+    j--;
+    
+    reverseString(str, i, j);
+}
+string reverseString(string str)
+{
+	reverseString(str,0,str.length()-1);
+	return str;
+}
