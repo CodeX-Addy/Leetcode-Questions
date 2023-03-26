@@ -1,6 +1,6 @@
 
 int solve(int *arr, int s, int e, int k){
-    // element is not present
+    // Element is not present
     if(s>e)
      return -1;
     int mid = s + (e-s)/2;
