@@ -5,7 +5,7 @@ void merge(vector < int > & arr, int s, int e){
 
   int *first = new int[len1];
   int *second = new int[len2];
-  // Copy values 
+  // Copying the values 
   int k = s;
   for(int i=0; i<len1; i++){
     first[i] = arr[k++];
