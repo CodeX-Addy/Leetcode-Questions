@@ -10,9 +10,9 @@ public:
 	while (s < e)
 	{
 		if(v[mid] < v[mid+1])
-     			s=mid+1;
+     		   s=mid+1;
     		else
-      			e = mid;
+      		   e = mid;
     
 		mid = (s + e) / 2;
 	}
