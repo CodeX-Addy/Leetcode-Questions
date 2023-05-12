@@ -33,14 +33,14 @@ public:
             }
             endingCol--;
             
-            //print ending row
+            //printing ending row
             for(int index = endingCol; count < total && index>=startingCol; index--) {
                 ans.push_back(matrix[endingRow][index]);
                 count++;
             }
             endingRow--;
             
-            //print starting column
+            //printing starting column
             for(int index = endingRow; count < total && index>=startingRow; index--) {
                 ans.push_back(matrix[index][startingCol]);
                 count++;
