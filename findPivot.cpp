@@ -1,7 +1,7 @@
 class Solution {
 public:
     int pivotIndex(vector<int>& nums) {
-        // Initialize rightSum to store the sum of all the numbers strictly to the index's right...
+        // Initialize rightSum to store the sum of all the numbers strictly to the index's right
         int rightSum = accumulate(nums.begin(), nums.end(), 0);
         // Initialize leftSum to store the sum of all the numbers strictly to the index's left...
         int leftSum = 0;
