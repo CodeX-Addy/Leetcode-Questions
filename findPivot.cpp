@@ -15,6 +15,6 @@ public:
             // add current elements with leftSum...
             leftSum += nums[idx];
         }
-        return -1;      // If there is no index that satisfies the conditions in the problem statement...
+        return -1;      // If there is no index that satisfies the conditions in the problem statement
     }
 };
