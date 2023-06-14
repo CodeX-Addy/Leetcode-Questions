@@ -2,7 +2,7 @@ class Solution {
 private:
     void solve(string digit, string output, int index, vector<string>& ans, string mapping[] ) {
         
-        //base case
+        //Base case
         if(index >= digit.length()) {
             ans.push_back(output);
             return;
