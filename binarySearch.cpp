@@ -1,4 +1,3 @@
-
 int solve(int *arr, int s, int e, int k){
     // Element is not present
     if(s>e)
