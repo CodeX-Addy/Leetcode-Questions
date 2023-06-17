@@ -8,8 +8,7 @@ int solve(int *arr, int s, int e, int k){
      
     if(arr[mid] < k)
      return solve(arr, mid+1, e, k);
-     
-    return solve(arr, s, mid-1, k);
+     return solve(arr, s, mid-1, k);
 }
 
 int binarySearch(int *input, int n, int val)
