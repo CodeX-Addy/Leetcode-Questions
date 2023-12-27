@@ -1,11 +1,14 @@
 class Solution {
 public:
     bool isAnagram(string s, string t) {
-        //sort(s.begin(), s.end()); Brute force approach
+        //Brute force approach
+        //sort(s.begin(), s.end()); 
         //sort(t.begin(), t.end());
 
         //if(s==t) return true;
         //else return false;
+
+        //Using hash table
         int freqTable[256] = {0};
         for(int i=0; i<s.size(); ++i){
             freqTable[s[i]]++;
