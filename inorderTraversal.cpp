@@ -1,4 +1,5 @@
 // INORDER TRAVERSAL USING MORRIS TRAVERSAL FOR SPACE OPTIMIZATION
+
 class Solution {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
