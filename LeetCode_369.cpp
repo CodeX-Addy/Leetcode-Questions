@@ -7,7 +7,6 @@ public:
         for(auto n : nums1){
             mp[n]++;
         }
-
         for(auto n : nums2){
             if(mp.find(n)!=mp.end()){
                 ans.push_back(n);
