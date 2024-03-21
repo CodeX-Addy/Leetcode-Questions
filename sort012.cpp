@@ -4,7 +4,7 @@
 //sort(a.begin(, a.end())) --> TC- O(nlogn) SC - O(1)
 
 
-//Approach2: By counting
+//Approch2: By counting
 void sortColors(vector<int>& nums) {
         vector<int> ans;
         //SORT --> O(nlogn)
@@ -39,6 +39,7 @@ void sortColors(vector<int>& nums) {
     }
 
 
+//Approach3 : Using 3 pointers(In place)
 void sort012(int *arr, int n)
 {
    int s=0,e=n-1,mid=0;
