@@ -40,22 +40,20 @@ void sortColors(vector<int>& nums) {
 
 
 //Approach3 : Using 3 pointers(In place)
-void sort012(int *arr, int n)
-{
-   int s=0,e=n-1,mid=0;
-   while(mid<=e){
-      if(arr[mid]==0){
-         arr[mid] = arr[s];
-         arr[s] = 0;
-         s++;
-         mid++;
-      }
-      else if(arr[mid]==1)
-      mid++;
-      else if(arr[mid]==2){
-         arr[mid] = arr[e];
-         arr[e] = 2;
-         e--;
-      }
-   }
-}
+ void sortColors(vector<int>& nums) {
+        int l=0,m=0,h=nums.size()-1;
+        while(m<=h){
+            if(nums[m] == 0){
+                swap(nums[l],nums[m]);
+                ++l;
+                ++m;
+            }
+            else if(nums[m] == 1)
+                ++m;
+            else{
+                swap(nums[m],nums[h]);
+                --h;
+            }
+                
+        }
+    }
