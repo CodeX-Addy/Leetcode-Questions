@@ -1,21 +1,5 @@
 #include<vector>
 using namespace std;
-int findDuplicate(vector<int> &arr) 
-{
-    int ans = 0;
-    
-    //XOR all array elements
-    for(int i = 0; i<arr.size(); i++ ) {
-        ans = ans^arr[i];
-    }
-    
-    //XOR [1, n-1]
-    for(int i = 1; i<arr.size();i++ ) {
-        ans = ans^i;
-    }
-    return ans;
-}
-
 
 //Using hashmap approach
     int findDuplicate(vector<int>& nums) {
@@ -32,3 +16,9 @@ int findDuplicate(vector<int> &arr)
         }
         return ans;
     }
+
+//Positioning approach
+    while(nums[0] != nums[nums[0]]){
+            swap(nums[0], nums[nums[0]]);
+        }
+        return nums[0];
