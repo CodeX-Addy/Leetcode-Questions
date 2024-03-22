@@ -27,4 +27,18 @@ public:
         }
         return nums.size();
     }
+
+    int xorApproach(vector<int>&nums){
+        int ans = 0;
+        //XOR all values present in nums
+        for(int i=0; i<nums.size(); ++i){
+            ans^=nums[i];
+        }
+
+        //XOR from 1 to N
+        for(int i=0; i<=nums.size(); ++i){
+            ans^=i;
+        }
+        return ans;
+    }
 };
