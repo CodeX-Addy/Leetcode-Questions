@@ -15,3 +15,20 @@ int findDuplicate(vector<int> &arr)
     }
     return ans;
 }
+
+
+//Using hashmap approach
+    int findDuplicate(vector<int>& nums) {
+        //Hashmap
+        int ans = 0;
+        map<int,int> mp;
+        for(int i=0; i<nums.size(); ++i){
+            mp[nums[i]]++;
+        }
+
+        for(auto i : mp){
+            if(i.second > 1)
+                ans = i.first;
+        }
+        return ans;
+    }
