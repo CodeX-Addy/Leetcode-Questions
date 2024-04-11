@@ -2,7 +2,7 @@
 
 class Solution {
 public:
-
+    //Hash function 
     std::array<int, 256> hash(string s){
         std::array<int, 256> hash = {0};
         for(int i=0; i<s.size(); ++i){
@@ -13,7 +13,7 @@ public:
 
     vector<vector<string>> groupAnagrams(vector<string>& strs) {
         map<std::array<int, 256>, vector<string>>mp;
-
+  
         for(auto str : strs){
             mp[hash(str)].push_back(str);
         }
