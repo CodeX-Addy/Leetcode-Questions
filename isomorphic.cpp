@@ -23,8 +23,8 @@ bool isomorphic(string &s, string &t) {
 }
 
 int main(){
-    string s = "foo";
-    string t = "bar";
+    string s, t;
+    cin >> s >> t;
     if(isomorphic(s,t))
         cout << "Yes" << endl;
     else
