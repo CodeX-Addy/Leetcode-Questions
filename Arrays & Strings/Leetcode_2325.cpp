@@ -2,8 +2,9 @@ class Solution {
 public:
     string decodeMessage(string key, string message) {
         char start = 'a';
-        char mapping[280] = {0};
+        char mapping[300] = {0};
 
+        //creating mapping array
         for(auto ch: key){
             if(ch != ' ' && mapping[ch] == 0){
                 mapping[ch] = start;
@@ -11,8 +12,9 @@ public:
             }
         }
 
+        //decoding the message
         string ans;
-        for(char ch: message){
+        for(auto ch: message){
             if(ch == ' ')
                 ans.push_back(ch);
             else{
