@@ -11,7 +11,6 @@ public:
 
     int numberOfBeams(vector<string>& bank) {
         vector<int>devices;
-
         for(auto row:bank)
             devices.push_back(countDevice(row));
 
